@@ -1,0 +1,251 @@
+body{
+    position: relative;
+    background: linear-gradient(236.85deg, #c496ce 27.26%, #9459cf 96.03%);
+}
+/*Início do cabeçalho*/
+header{
+    position: relative;
+    background: #e0d9d9ce;
+    padding: 10px 0;
+}
+
+.tema button {
+    color: #1c1c1c;
+    background: #ffffff;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: 2px solid #f7f7f7;
+  }
+
+.caixa{
+    padding: 10px;
+    height: 55px;
+    border-radius: 20px;
+}
+
+.logo{
+    width: 60px;
+    height: 67px ;
+    margin-left: 25px;
+}
+
+nav {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    margin-right: 35px;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    /*deixa tudo maiusculo*/
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    /*quando o mouse estiver por cima dos link de navegação*/
+    color: #a202c2;
+    text-decoration: underline;
+}
+/*Fim do cabeçalho*/
+
+.principal{
+    width: 800px;
+	padding: 30px;
+    font-size: 18px;
+    background-color: #e0d9d965;
+    text-align: justify;
+    margin: auto; /*centraliza*/
+    line-height: 1.5;
+}
+
+.titulo-principal{
+    top: 192px;
+    font-style: bold;
+    font-weight: 800;
+    font-size: 32px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 20px;
+    text-align: center;
+}
+
+b{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+strong{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: underline;
+}
+
+.video{
+    text-align: center;
+    margin: 30px;
+    width: 560px;
+    margin: 2em auto;
+}
+
+#missao {
+	font-style: italic;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.titulo-secundario{
+    font-weight: bold;
+    font-size: 28px;
+    margin: 30px 15px 15px 15px;
+}
+
+.conteudo{
+    margin-left: 30px;
+}
+
+.itens{
+    line-height: 1.5;
+    margin: 30px 0;
+}
+
+.itens:before{
+    content: "♟️";
+}
+
+.online{
+    margin-top: 15px;
+}
+
+.nome--preparacao{
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.modo-jogar{
+    font-size: 24px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comoJogar{
+    border: solid #cabebe;
+    margin: 15px;
+    padding: 10px 10px 20px 20px;
+    text-align: justify;
+}
+.comoJogar:hover {
+    border: #dfffea solid ;
+    text-align: justify;
+}
+
+.fala{
+    border: solid 0.3px;
+    padding: 5px 15px;
+    border-radius: 46px;
+    width: 320px;    
+    margin: 15px;
+    background-color: #d9dfdb;
+}
+
+span{
+    font-size: 16px;
+    padding: 20px;
+}
+
+.parte2{
+    margin: 15px;
+}
+.video2{
+    text-align: center;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color:#8d2bed;
+}
+
+footer {
+    text-align: center;
+    background: url("../imagem/bg.jpg");
+    padding: 40px 0;
+    color: #ffffff;
+    
+}
+
+.copyright {
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/*Tema escuro*/
+
+.dark {
+    background: linear-gradient(236.85deg, #ab46c2 27.26%, #a087b9 96.03%);
+  }
+  
+  .dark header{
+    background: #33343956;
+    color: #f6f6f6;
+  }
+  .dark .principal  {
+    background: #333439;
+    color: #f6f6f6;
+  }
+
+  
+  .dark .projetos {
+    color: #1c1c1c;
+  }
+  
+  .dark .conquistas {
+    color: #1c1c1c;
+  }
+  
+  .dark .tema button {
+    color: #ffffff;
+    background: #1c1c1c;
+    box-sizing: border-box;
+    border-radius: 100px;
+    border: 2px solid #f7f7f7;
+  }
+
+  .dark .fala{
+      color: #181616;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #1c1c1c;
+    border: 1.8px solid #1c1c1c;
+    border-radius: 100px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ecf4ff;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #ecf4ff;
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 0px 0px #f0f0f0;
+    margin: 15px 0px;
+  }
+
