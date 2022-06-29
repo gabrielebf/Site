@@ -1,12 +1,13 @@
 body{
     position: relative;
-    background: linear-gradient(236.85deg, #c496ce 27.26%, #9459cf 96.03%);
+    background: linear-gradient(236.85deg, #0166eb 27.26%,rgb(148, 226, 125),  #ee7d7d, #01ebc4 96.03%);
 }
 /*Início do cabeçalho*/
 header{
     position: relative;
-    background: #e0d9d9ce;
+    background: #d8d0d0d3;
     padding: 10px 0;
+    color: #1c1c1c;
 }
 
 .tema button {
@@ -61,7 +62,7 @@ nav a:hover {
     width: 800px;
 	padding: 30px;
     font-size: 18px;
-    background-color: #e0d9d965;
+    background-color: #fffefed3;
     text-align: justify;
     margin: auto; /*centraliza*/
     line-height: 1.5;
@@ -71,7 +72,7 @@ nav a:hover {
     top: 192px;
     font-style: bold;
     font-weight: 800;
-    font-size: 32px;
+    font-size: 42px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 20px;
     text-align: center;
@@ -194,14 +195,15 @@ footer {
 /*Tema escuro*/
 
 .dark {
-    background: linear-gradient(236.85deg, #ab46c2 27.26%, #a087b9 96.03%);
+    background: linear-gradient(236.85deg, #044dac 27.26%,rgb(91, 160, 70),  #b64646, #1a9681 96.03%);
   }
   
   .dark header{
-    background: #33343956;
-    color: #f6f6f6;
+    background: #2d2e35a9;
+    text-shadow: #f6f6f6;
   }
-  .dark .principal  {
+
+  .dark .principal{
     background: #333439;
     color: #f6f6f6;
   }
@@ -221,6 +223,10 @@ footer {
     box-sizing: border-box;
     border-radius: 100px;
     border: 2px solid #f7f7f7;
+  }
+
+  .dark .caixa ul{
+      color: #f6f6f6;
   }
 
   .dark .fala{
@@ -249,3 +255,43 @@ footer {
     margin: 15px 0px;
   }
 
+  /*celular */
+  @media screen and (max-width: 480px) {
+    .caixa, .principal, .inicio, .titulo-principal, .estrutura, .titulo-secundario, .objetivo, .conteudo, .preparacao, .conteudo-preparacao, .nome--preparacao, .online,.jogo, .modo-jogar,.conteudo-comoJogar,.fala, .parte2, .mapa-conteudo, .video, .video2, .comoJogar {
+        width: auto;
+    }
+
+    h1{
+        text-align: center;
+        width: auto;
+    }
+
+    nav{
+        position: static;
+    }
+    
+    nav li {
+        display: inline;
+        margin: 0 0 0 15px;
+    }
+
+    .lista-estrutura, .imagem-beneficios {
+        width: 100%
+    }
+
+    .itens {
+        width: auto;
+        margin: 0 auto;
+        padding: 50px 0;
+        display: list-item;
+        text-align: center;
+        width: auto;
+        vertical-align: top;
+        margin: 1.5% 0;
+        padding: auto;
+        box-sizing: border-box;
+        border: auto solid #000000;
+        border-radius: 10px;
+    }
+    
+}
