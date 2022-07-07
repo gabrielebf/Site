@@ -4,6 +4,7 @@ body{
 }
 /*Início do cabeçalho*/
 header{
+    width: 100%;
     position: relative;
     background: #d8d0d0d3;
     padding: 10px 0;
@@ -71,7 +72,7 @@ nav a:hover {
 .titulo-principal{
     top: 192px;
     font-style: bold;
-    font-weight: 800;
+    font-weight: 800px;
     font-size: 42px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 20px;
@@ -90,10 +91,12 @@ strong{
     text-decoration: underline;
 }
 
-.video{
+iframe{
     text-align: center;
     margin: 30px;
+    display: block;
     width: 560px;
+    height: 430px;
     margin: 2em auto;
 }
 
@@ -140,9 +143,10 @@ strong{
 }
 
 .comoJogar{
+    text-align: center;
     border: solid #cabebe;
-    margin: 15px;
-    padding: 10px 10px 20px 20px;
+    margin: 0px auto;
+    padding: 10px 20px;
     text-align: justify;
 }
 .comoJogar:hover {
@@ -166,10 +170,6 @@ span{
 
 .parte2{
     margin: 15px;
-}
-.video2{
-    text-align: center;
-    margin: 0 auto;
 }
 
 a{
@@ -201,6 +201,10 @@ footer {
   .dark header{
     background: #2d2e35a9;
     text-shadow: #f6f6f6;
+  }
+
+  .dark .cabecalho{
+      color: #f6f6f6;
   }
 
   .dark .principal{
@@ -256,9 +260,23 @@ footer {
   }
 
   /*celular */
-  @media screen and (max-width: 480px) {
-    .caixa, .principal, .inicio, .titulo-principal, .estrutura, .titulo-secundario, .objetivo, .conteudo, .preparacao, .conteudo-preparacao, .nome--preparacao, .online,.jogo, .modo-jogar,.conteudo-comoJogar,.fala, .parte2, .mapa-conteudo, .video, .video2, .comoJogar {
-        width: auto;
+@media screen and (max-width: 800px) {
+
+    .logo{
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 10px;
+    }
+    .caixa{
+        width: 90%;
+        display: inline;
+        position: relative;
+        text-align: center;
+        padding-top: 10px;
+    }
+    
+    .principal, .inicio, .titulo-principal, .estrutura, .titulo-secundario, .objetivo, .conteudo, .preparacao, .conteudo-preparacao, .nome--preparacao, .online,.jogo, .modo-jogar,.conteudo-comoJogar,.fala, .parte2, .mapa-conteudo{
+        width: 90%;
     }
 
     h1{
@@ -279,6 +297,14 @@ footer {
         width: 100%
     }
 
+    iframe{
+        text-align: center;
+        margin: 0 auto;
+        display: block;
+        width: auto;
+        height: auto;
+    }
+
     .itens {
         width: auto;
         margin: 0 auto;
@@ -292,6 +318,13 @@ footer {
         box-sizing: border-box;
         border: auto solid #000000;
         border-radius: 10px;
+    }
+
+    .comoJogar{   
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+
     }
     
 }
